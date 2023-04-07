@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>I Club GYM</title>
+
+		<!-- include all css files -->
+		<link
+			rel="stylesheet"
+			href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+		/>
+		<link rel="stylesheet" href="layout/css/index.css" />
+
+		<!-- include page icon -->
+		<link rel="icon" href="assets/img/jpg_025.jpg" />
+	</head>
+	<body>
+		<!-- navbar -->
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-none fixed-top">
+			<div class="container">
+				<a
+					class="navbar-brand text-uppercase font-weight-bold"
+					href="index.html"
+				>
+					<img
+						class="image-brand"
+						src="assets/img/jpg_025.jpg"
+						alt="gym icon"
+					/>
+					i-club <small class="text-danger">gym</small>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbar-menu"
+					aria-controls="navbar-menu"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse text-capitalize" id="navbar-menu">
+					<ul class="navbar-nav m-auto">
+						<!-- home -->
+						<li class="nav-item">
+							<a class="nav-link active" href="index.html"
+								><i class="bi bi-house"></i> home</a
+							>
+						</li>
+						<!-- about -->
+						<li class="nav-item">
+							<a class="nav-link" href="">about</a>
+						</li>
+						<!-- pages -->
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+								>pages</a
+							>
+
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="">our team</a>
+								<a class="dropdown-item" href="">contact us</a>
+								<a class="dropdown-item" href="">pricing plans</a>
+							</div>
+						</li>
+						<!-- blog -->
+						<li class="nav-item">
+							<a class="nav-link" href="">blog</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- end navbar -->
+
+		<!-- start carousel -->
+		<div
+			id="videoFullScreen"
+			class="carousel slide carousel-fade d-none d-md-block"
+			data-ride="carousel"
+		>
+			<ol class="carousel-indicators d-none d-lg-flex">
+				<li data-target="#videoFullScreen" data-slide-to="0"></li>
+				<li
+					data-target="#videoFullScreen"
+					data-slide-to="1"
+					class="active"
+				></li>
+				<li data-target="#videoFullScreen" data-slide-to="2"></li>
+			</ol>
+			<!-- VIDEOS -->
+			<div class="carousel-inner">
+				<div class="carousel-item">
+					<video autoplay muted loop class="d-block w-100">
+						<source src="assets/video/mp4_003.mp4" type="video/mp4" />
+						Sorry, your browser not support this video type.
+					</video>
+					<div class="gray-overlay"></div>
+				</div>
+
+				<div class="carousel-item active">
+					<video autoplay muted loop class="d-block w-100">
+						<source src="assets/video/mp4_005.mp4" type="video/mp4" />
+						Sorry, your browser not support this video type.
+					</video>
+					<div class="gray-overlay"></div>
+				</div>
+
+				<div class="carousel-item">
+					<video autoplay muted loop class="d-block w-100">
+						<source src="assets/video/mp4_006.mp4" type="video/mp4" />
+						Sorry, your browser not support this video type.
+					</video>
+					<div class="gray-overlay"></div>
+				</div>
+
+				<div class="car-caption d-none d-lg-block">
+					<h1>great things never come from comfort zones</h1>
+				</div>
+			</div>
+		</div>
+		<!-- end carousel -->
+
+		<!-- header for mobile screen -->
+		<div class="bg-mobile d-block d-md-none">
+			<div class="gray-overlay">
+				<div class="caption">
+					<span>this is</span>
+					<h1>home</h1>
+				</div>
+			</div>
+		</div>
+
+		<!-- FUNCTIONALITY -->
+		<div class="functionality">
+			<div class="container">
+				<div class="header">
+					<h2>what is functional fitness all about</h2>
+					<p class="lead">
+						Lorem Ipsum is simply dummy text of the printing and typesetting
+						industry. Lorem Ipsum has been the industry's standard dummy text
+						ever since the 1500s, when an unknown printer took a galley of type
+						and scrambled it to make a type specimen book.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- TEAM OF EXPERT COACHES -->
+		<div class="coaches">
+			<!-- staff word in the left of screen -->
+			<article class="section-word d-none d-lg-block">
+				<span>staff</span>
+			</article>
+			<!-- container that holds the content -->
+			<div class="container">
+				<!-- header -->
+				<header class="header">
+					<h2>team of expert coaches</h2>
+					<p class="lead"
+						>lorem ipsum is simply dummy text of the printing and typesetting
+						industry.</p
+					>
+				</header>
+				<!-- coches -->
+				<div class="pl-0 row">
+					<!-- first coache -->
+					<div class="col-sm-12 col-md">
+						<!-- coache card -->
+						<div class="card">
+							<!-- coache image -->
+							<div class="card-image-container">
+								<img
+									src="assets/img/jpg_016.jpg"
+									class="card-img-top"
+									alt="Coache 1..."
+								/>
+							</div>
+							<!-- coache info -->
+							<div class="card-body">
+								<h5 class="card-title text-capitalize">ahmed hassib</h5>
+								<!-- coache name -->
+								<h6 class="card-subtitle text-uppercase">fitness coache</h6>
+								<!-- coache traning type -->
+								<!-- coache accounts in social media  -->
+								<a href="" class="mt-2 card-link bi bi-facebook"></a>
+								<!-- facebook -->
+								<a href="" class="card-link bi bi-twitter"></a>
+								<!-- twitter -->
+								<a href="" class="card-link bi bi-instagram"></a>
+								<!-- imstagram -->
+							</div>
+						</div>
+					</div>
+					<!-- second coache -->
+					<div class="col-sm-12 col-md">
+						<!-- coache card -->
+						<div class="card">
+							<!-- coache image -->
+							<div class="card-image-container">
+								<img
+									src="assets/img/jpg_017.jpg"
+									class="card-img-top"
+									alt="Coache 2..."
+								/>
+							</div>
+							<!-- coache info -->
+							<div class="card-body">
+								<h5 class="card-title text-capitalize">jessy jony</h5>
+								<!-- coache name -->
+								<h6 class="card-subtitle text-uppercase">fitness coache</h6>
+								<!-- coache traning type -->
+								<!-- coache accounts in social media  -->
+								<a href="" class="mt-2 card-link bi bi-facebook"></a>
+								<!-- facebook -->
+								<a href="" class="card-link bi bi-twitter"></a>
+								<!-- twitter -->
+								<a href="" class="card-link bi bi-instagram"></a>
+								<!-- imstagram -->
+							</div>
+						</div>
+					</div>
+					<!-- third coache -->
+					<div class="col-sm-12 col-md">
+						<!-- coache card -->
+						<div class="card">
+							<!-- coache image -->
+							<div class="card-image-container">
+								<img
+									src="assets/img/jpg_018.jpg"
+									class="card-img-top"
+									alt="Coache 3..."
+								/>
+							</div>
+							<!-- coache info -->
+							<div class="card-body">
+								<h5 class="card-title text-capitalize">ahmed hassib</h5>
+								<!-- coache name -->
+								<h6 class="card-subtitle text-uppercase">fitness coache</h6>
+								<!-- coache traning type -->
+								<!-- coache accounts in social media  -->
+								<a href="" class="mt-2 card-link bi bi-facebook"></a>
+								<!-- facebook -->
+								<a href="" class="card-link bi bi-twitter"></a>
+								<!-- twitter -->
+								<a href="" class="card-link bi bi-instagram"></a>
+								<!-- imstagram -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- OVERVIEW -->
+		<div class="overview">
+			<div class="container">
+				<!-- header -->
+				<header class="header">
+					<h2>gym overview</h2>
+					<p class="lead"
+						>Et harum quidem rerum facilis est et expedita distinctio. Nam
+						libero tempore, cum soluta nobis est eligendi optio cumque nihil
+						impedit.</p
+					>
+					<h5>let`s start today</h5>
+					<button class="btn btn-outline-dark">view more</button>
+				</header>
+			</div>
+		</div>
+
+		<!-- MOTIVATOION VIDEO -->
+		<div class="mot-video">
+			<div class="container">
+				<div class="row">
+					<!-- first column -->
+					<div class="col-sm-12 col-lg-7">
+						<article class="header">
+							<h2>get some motivation</h2>
+							<p class="lead">
+								Lorem Ipsum is simply dummy text of the printing and typesetting
+								industry. Lorem Ipsum has been the industry's standard dummy
+								text ever since the 1500s, when an unknown printer took a galley
+								of type and scrambled it to make a type specimen book.
+							</p>
+						</article>
+					</div>
+					<!-- second column -->
+					<div class="col-sm-12 col-lg-5 video">
+						<video controls autoplay loop muted>
+							<source src="assets/video/mp4_001.mp4" type="video/mp4" />
+							<source src="assets/video/mp4_001.ogg" type="video/ogg" />
+							Sorry, your device doesn`t support this type of video..
+						</video>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- BODY MASS INDEX (BMI) -->
+		<div class="bmi">
+			<!-- body word in the left of screen -->
+			<section class="section-word d-none d-lg-block">
+				<span>body</span>
+			</section>
+			<!-- bmi content -->
+			<div class="container" id="bmi-calculator">
+				<div class="row">
+					<div class="col-sm-12 col-lg-6">
+						<!-- header -->
+						<header class="header">
+							<h2>what is bmi</h2>
+							<p class="lead text-muted"
+								>Et harum quidem rerum facilis est et expedita distinctio. Nam
+								libero tempore, cum soluta nobis est eligendi optio cumque nihil
+								impedit.</p
+							>
+						</header>
+						<!-- inputs for bmi -->
+						<div class="bmi-calc">
+							<!-- height and weight -->
+							<div class="row">
+								<input
+									class="col-sm-12 col-lg form-control"
+									type="text"
+									placeholder="height/cm"
+									id="height"
+								/>
+								<input
+									class="col-sm-12 col-lg form-control"
+									type="text"
+									placeholder="weight/kg"
+									id="weight"
+								/>
+							</div>
+							<!-- age and gender -->
+							<div class="row">
+								<input
+									class="col-sm-12 col-lg form-control"
+									type="text"
+									placeholder="age"
+								/>
+								<!-- gender -->
+								<select class="col-sm-12 col-lg form-control">
+									<option selected>gender</option>
+									<option value="male">male</option>
+									<option value="female">female</option>
+								</select>
+							</div>
+							<!-- activity factor -->
+							<div class="row">
+								<select class="col form-control">
+									<option selected>select an activity factor:</option>
+									<option>little or no exersice/ desk job</option>
+									<option>light exersice, sports 1-3 days/ week</option>
+									<option>moderate exersice, sports 3-5 days/ week</option>
+									<option>heavy exersice, sports 6-7 days/ week</option>
+									<option
+										>very heavy exersice, physical job, training 2x/ day</option
+									>
+								</select>
+							</div>
+							<!-- calculate button -->
+							<div class="hstack gap-3">
+								<button type="button" class="btn btn-outline-dark" id="bmi-calc"
+									>calculate</button
+								>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-12 col-lg-6">
+						<div class="bmi-table">
+							<!-- BMI table -->
+							<table class="table">
+								<!-- table caption -->
+								<caption
+									><span class="text-dark">bmi</span> body mass index</caption
+								>
+								<!-- table header -->
+								<thead>
+									<tr>
+										<th scope="col">bmi</th>
+										<th scope="col">weight status</th>
+									</tr>
+								</thead>
+								<!-- table body -->
+								<tbody>
+									<tr>
+										<td>below 18.5</td>
+										<td>underweight</td>
+									</tr>
+									<tr>
+										<td>18.5 - 24.9</td>
+										<td>healthy</td>
+									</tr>
+									<tr>
+										<td>25.0 - 29.9</td>
+										<td>overweight</td>
+									</tr>
+									<tr>
+										<td>30.0 - and above</td>
+										<td>obese</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- alert of bmi result -->
+				<div
+					class="alert alert-dark alert-dismissible fade hide"
+					role="alert"
+					id="bmi-alert"
+				>
+					<!-- alert message -->
+					<div id="bmi-msg"></div>
+					<!-- X button -->
+					<button
+						type="button"
+						class="close"
+						data-dismiss="dispose"
+						aria-label="Close"
+					>
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- CLASSES -->
+		<div class="classes">
+			<div class="row">
+				<!-- progression -->
+				<div class="col-sm-12 col-md col-lg class">
+					<img src="assets/img/jpg_010.jpg" alt="progression class.." />
+					<div class="gray-overlay">
+						<div class="class-content">
+							<h2>progression</h2>
+							<p class="lead"
+								>lorem Ipsum is simply dummy text of the printing and
+								typesetting industry.
+							</p>
+							<!-- send message button -->
+							<a href="" class="btn btn-outline-light text-uppercase"
+								>send message</a
+							>
+						</div>
+					</div>
+				</div>
+				<!-- workout -->
+				<div class="col-sm-12 col-md col-lg class">
+					<img src="assets/img/jpg_044.jpg" alt="workout class.." />
+					<div class="gray-overlay">
+						<div class="class-content">
+							<h2>workout</h2>
+							<p class="lead"
+								>lorem Ipsum is simply dummy text of the printing and
+								typesetting industry.
+							</p>
+							<!-- send message button -->
+							<a href="" class="btn btn-outline-light text-uppercase"
+								>send message</a
+							>
+						</div>
+					</div>
+				</div>
+				<!-- nutrition -->
+				<div class="col-sm-12 col-md col-lg class">
+					<img src="assets/img/jpg_028.jpg" alt="nutrition class.." />
+					<div class="gray-overlay">
+						<div class="class-content">
+							<h2>nutrition</h2>
+							<p class="lead"
+								>lorem Ipsum is simply dummy text of the printing and
+								typesetting industry.
+							</p>
+							<!-- send message button -->
+							<a href="" class="btn btn-outline-light text-uppercase"
+								>send message</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- LATEST BLOG POSTS -->
+		<div class="blog-posts">
+			<!-- blog word in the left of screen -->
+			<section class="section-word d-none d-lg-block">
+				<span>blog</span>
+			</section>
+			<!-- container -->
+			<div class="container">
+				<!-- header -->
+				<header class="header">
+					<h2>latest blog posts</h2>
+					<p class="lead"
+						>Lorem Ipsum is simply dummy text of the printing and typesetting
+						industry. Lorem Ipsum has been the industry's standard dummy text
+						ever since the 1500s, when an unknown printer took a galley of type
+						and scrambled it to make a type specimen book.</p
+					>
+				</header>
+				<!-- content -->
+				<div class="content">
+					<div class="row">
+						<!-- first post -->
+						<div class="col-sm-12 col-lg">
+							<div class="card">
+								<div class="img-holder">
+									<img
+										src="assets/img/jpg_002.jpg"
+										class="card-img-top"
+										alt="first post"
+									/>
+								</div>
+								<div class="card-body">
+									<h3 class="card-title"
+										>Lorem Ipsum is simply dummy text of the printing and
+										typesetting industry.</h3
+									>
+									<h6 class="card-subtitle mb-2 text-muted">march 24, 2020</h6>
+									<p class="card-text"
+										>Some quick example text to build on the card title and make
+										up the bulk of the card's content.</p
+									>
+									<a href="#" class="card-link text-danger">read more...</a>
+								</div>
+							</div>
+						</div>
+						<!-- second post -->
+						<div class="col-sm-12 col-lg">
+							<div class="card">
+								<div class="img-holder">
+									<img
+										src="assets/img/jpg_039.jpg"
+										class="card-img-top"
+										alt="second post"
+									/>
+								</div>
+								<div class="card-body">
+									<h3 class="card-title"
+										>Lorem Ipsum is simply dummy text of the printing and
+										typesetting industry.</h3
+									>
+									<h6 class="card-subtitle mb-2 text-muted">march 24, 2020</h6>
+									<p class="card-text"
+										>Some quick example text to build on the card title and make
+										up the bulk of the card's content.</p
+									>
+									<a href="#" class="card-link text-danger">read more...</a>
+								</div>
+							</div>
+						</div>
+						<!-- third post -->
+						<div class="col-sm-12 col-lg">
+							<div class="card">
+								<div class="img-holder">
+									<img
+										src="assets/img/jpg_043.jpg"
+										class="card-img-top"
+										alt="third post"
+									/>
+								</div>
+								<div class="card-body">
+									<h3 class="card-title"
+										>Lorem Ipsum is simply dummy text of the printing and
+										typesetting industry.</h3
+									>
+									<h6 class="card-subtitle mb-2 text-muted">march 24, 2020</h6>
+									<p class="card-text"
+										>Some quick example text to build on the card title and make
+										up the bulk of the card's content.</p
+									>
+									<a href="#" class="card-link text-danger">read more...</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- PROGRAMS -->
+		<div class="programs">
+			<!-- first row -->
+			<div class="row">
+				<!-- first column -->
+				<div class="col-sm-12 col-lg class">
+					<!-- class image -->
+					<img src="assets/img/jpg_008.jpg" alt="CARDIO PROGRAM..." />
+					<!-- class content -->
+					<div class="gray-overlay">
+						<div class="class-content">
+							<h2>cardio program</h2>
+							<p class="lead"
+								>lorem Ipsum is simply dummy text of the printing and
+								typesetting industry.</p
+							>
+							<!-- send message button -->
+							<a href="" class="btn btn-outline-light text-uppercase"
+								>send message</a
+							>
+						</div>
+					</div>
+				</div>
+				<!-- second column -->
+				<div class="col-sm-12 col-lg class">
+					<!-- class image -->
+					<img src="assets/img/jpg_051.jpg" alt="PURE STRENTH..." />
+					<!-- class content -->
+					<div class="gray-overlay">
+						<div class="class-content">
+							<h2>pure strenth</h2>
+							<p class="lead"
+								>lorem Ipsum is simply dummy text of the printing and
+								typesetting industry.
+							</p>
+							<!-- send message button -->
+							<a href="" class="btn btn-outline-light text-uppercase"
+								>send message</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- second row -->
+			<div class="row">
+				<!-- first column -->
+				<div class="col-sm-12 col-lg class">
+					<!-- class image -->
+					<img src="assets/img/jpg_050.jpg" alt="TRUE CHALLENGE..." />
+					<!-- class content -->
+					<div class="gray-overlay">
+						<div class="class-content">
+							<h2>true challenge</h2>
+							<p class="lead"
+								>lorem Ipsum is simply dummy text of the printing and
+								typesetting industry.
+							</p>
+							<!-- send message button -->
+							<a href="" class="btn btn-outline-light text-uppercase"
+								>send message</a
+							>
+						</div>
+					</div>
+				</div>
+				<!-- second column -->
+				<div class="col-sm-12 col-lg class">
+					<!-- class image -->
+					<img src="assets/img/jpg_054.jpg" alt="POWER YOGA..." />
+					<!-- class content -->
+					<div class="gray-overlay">
+						<div class="class-content">
+							<h2>power yoga</h2>
+							<p class="lead"
+								>lorem Ipsum is simply dummy text of the printing and
+								typesetting industry.
+							</p>
+							<!-- send message button -->
+							<a href="" class="btn btn-outline-light text-uppercase"
+								>send message</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ASK -->
+		<div class="ask">
+			<!-- ask word in the left of screen -->
+			<section class="section-word d-none d-lg-block">
+				<span>ask</span>
+			</section>
+			<!-- container -->
+			<div class="container">
+				<div class="row">
+					<!-- first column -->
+					<div class="col-sm-12 col-lg-6">
+						<header class="header">
+							<h2>feel free to ask anything</h2>
+							<p class="lead text-muted"
+								>Et harum quidem rerum facilis est et expedita distinctio. Nam
+								libero tempore, cum soluta nobis est eligendi optio cumque nihil
+								impedit.</p
+							>
+						</header>
+					</div>
+					<!-- second column -->
+					<div class="col-sm-12 col-lg-6 ask-msg">
+						<form>
+							<!-- name and e-mail -->
+							<div class="row">
+								<input
+									class="col-sm-12 col-lg form-control"
+									type="text"
+									placeholder="your full name"
+									name="fullName"
+								/>
+								<input
+									class="col-sm-12 col-lg form-control"
+									type="text"
+									placeholder="e-mail"
+									name="email"
+								/>
+							</div>
+							<!-- subject -->
+							<div class="row">
+								<input
+									class="col-sm-12 col-lg form-control"
+									type="text"
+									placeholder="subject"
+									name="subject"
+								/>
+							</div>
+							<!-- textarea -->
+							<div class="row">
+								<textarea
+									class="col-sm-12 col-lg form-control"
+									placeholder="drop us a few lines here..."
+									name="askMsg"
+								></textarea>
+							</div>
+							<!-- submit -->
+							<div class="row">
+								<input
+									class="col-sm-12 col-lg form-control btn btn-outline-dark text-uppercase"
+									type="submit"
+									value="submit"
+									name="submit"
+								/>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="container">
+				<p>made with <i class="bi bi-heart-fill text-danger"></i> by Ahmed Hassib</p>
+			</div>
+		</footer>
+
+		<!-- include all js files -->
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="layout/js/index.js"></script>
+	</body>
+</html>
