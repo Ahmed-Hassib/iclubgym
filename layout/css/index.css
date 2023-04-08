@@ -55,6 +55,7 @@ body {
 	transform: rotate(0deg) rotate(-90deg) translate(calc(-70% - 1.5em), 55%);
 	transform-origin: -0.5em center;
 	text-transform: uppercase;
+	z-index: -1;
 }
 
 /********************************/
@@ -228,6 +229,7 @@ body {
 /* coache word */
 .coaches .section-word {
 	transform: rotate(0deg) rotate(-90deg) translate(calc(-60% - 1.5em), 55%);
+	z-index: 0;
 }
 /* color of h2 & p in coaches header */
 .coaches header h2 {
@@ -323,13 +325,13 @@ body {
 /*********************************************/
 /*********** BODY MASS INDEX (BMI) ***********/
 .bmi {
-	padding: 4rem 4rem 2rem 4rem;
+	padding: 4rem 4rem 5rem;
 	position: relative;
 	color: #000;
 }
 /* BMI section word */
 .bmi .section-word {
-	transform: rotate(0deg) rotate(-90deg) translate(calc(-50% - 1.5em), 55%);
+	transform: rotate(0deg) rotate(-90deg) translate(calc(-50% - 1.3em), 55%);
 }
 /* form control of bmi and ask section */
 .bmi-calc .form-control,
@@ -351,9 +353,8 @@ body {
 	color: rgba(0, 0, 0, 1);
 }
 /* button style */
-.bmi-calc button {
+.bmi-calc button#bmi-calc-btn {
 	margin: 1rem auto;
-	padding: 0.5rem 2rem;
 	text-transform: uppercase;
 }
 /* bmi table */
@@ -394,8 +395,8 @@ body {
 /* bmi alert */
 .bmi .alert {
 	margin: auto;
-	padding: 1rem 5rem;
-	width: 70%;
+	padding: 1rem 2rem;
+	width: 100%;
 }
 /* dark alert */
 .bmi .alert-dark {
@@ -406,8 +407,10 @@ body {
 .bmi #bmi-msg {
 	text-transform: uppercase;
 }
-.alert-dark .close {
+.btn-close {
 	color: #fff;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 /*******************************/
