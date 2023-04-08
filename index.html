@@ -92,17 +92,30 @@
 		<div
 			id="videoFullScreen"
 			class="carousel slide carousel-fade d-none d-md-block"
-			data-ride="carousel"
+			data-bs-ride="true"
 		>
-			<ol class="carousel-indicators d-none d-lg-flex">
-				<li data-target="#videoFullScreen" data-slide-to="0"></li>
-				<li
-					data-target="#videoFullScreen"
-					data-slide-to="1"
+			<div class="carousel-indicators">
+				<button
+					type="button"
+					data-bs-target="#videoFullScreen"
+					data-bs-slide-to="0"
+					aria-label="Slide 1"
+					></button>
+					<button
+					type="button"
+					data-bs-target="#videoFullScreen"
+					data-bs-slide-to="1"
 					class="active"
-				></li>
-				<li data-target="#videoFullScreen" data-slide-to="2"></li>
-			</ol>
+					aria-current="true"
+					aria-label="Slide 2"
+				></button>
+				<button
+					type="button"
+					data-bs-target="#videoFullScreen"
+					data-bs-slide-to="2"
+					aria-label="Slide 3"
+				></button>
+			</div>
 			<!-- VIDEOS -->
 			<div class="carousel-inner">
 				<div class="carousel-item">

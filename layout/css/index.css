@@ -141,7 +141,7 @@ body {
 	max-height: 45rem;
 }
 /* carousel indicator list */
-.carousel-indicators li {
+.carousel-indicators [data-bs-target] {
 	margin: 5px;
 	width: 20px;
 	height: 20px;
@@ -151,7 +151,7 @@ body {
 	cursor: pointer;
 }
 /* when carousel-indicators list is active */
-.carousel-indicators li.active {
+.carousel-indicators button.active {
 	background-color: rgba(255, 255, 255, 1);
 }
 /* Carousel caption */
