@@ -1,0 +1,41 @@
+a {
+	text-decoration: unset;
+	color: #000;
+}
+
+.bg-pages {
+	background: url(../../assets/img/jpg_043.jpg) center/cover no-repeat;
+}
+
+.blog-post {
+	overflow: hidden;
+}
+
+.card-img-top img {
+	max-width: 100%;
+}
+
+.blog-post .post-info {
+	list-style: none;
+}
+.categories ul {
+	list-style: none;
+}
+
+.categories ul span {
+	color: #000;
+}
+
+a.card-link {
+  color: rgba(0, 0, 0, 0.6);
+	transition: all 0.1s ease-in-out;
+}
+
+.categories  a.card-link:hover ,
+a.card-link:hover {
+  color: #000;
+}
+
+.categories  a.card-link:hover {
+  text-decoration: underline;
+}

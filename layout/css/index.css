@@ -19,7 +19,6 @@ body {
 	overflow-x: hidden;
 	font-family: "Montserrat", sans-serif;
 }
-
 /********************************/
 /*********** OVERLAYS ***********/
 .white-overlay,
@@ -77,6 +76,10 @@ body {
 /* first letter of paragraph */
 .header p::first-letter {
 	text-transform: capitalize;
+}
+
+.read-more {
+	text-decoration: underline;
 }
 
 /********************************/
@@ -175,6 +178,27 @@ body {
 }
 
 /***************************************/
+/* HEADER BACKGROUND FOR LABTOP SCREEN SCREEN */
+.bg-pages {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+.bg-pages .caption {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+}
+
+.bg-pages .caption > h1 {
+	font-weight: 700;
+	letter-spacing: 10px;
+	font-size: 2rem;
+}
+
 /* HEADER BACKGROUND FOR MOBILE SCREEN */
 .bg-mobile {
 	background: url("../../assets/img/jpg_026.jpg") center/cover scroll no-repeat

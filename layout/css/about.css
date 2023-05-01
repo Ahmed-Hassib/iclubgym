@@ -1,0 +1,21 @@
+.bg-pages {
+	background: url(../../assets/img/jpg_026.jpg) center/cover no-repeat;
+}
+
+.about-us {
+	margin-top: 4rem;
+}
+
+.about-us .about-content > .col-md:nth-child(odd) {
+	order: 2;
+}
+
+.about-us .about-content video {
+	width: 100%;
+}
+
+.about-us .header h2,
+.about-us .header p {
+	margin: unset !important;
+	width: 100%;
+}

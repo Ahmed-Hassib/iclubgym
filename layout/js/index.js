@@ -11,47 +11,52 @@ let bmi_clac_container = document.querySelector(".bmi-calc");
 		else navbar.classList.remove("scrolled");
 	});
 
-	bmi_calc_btn.addEventListener("click", (evt) => {
-		evt.preventDefault();
-		is_valid_inputs = true;
-		// get weight value
-		let weight = bmi_weight.value;
-		// get height value
-		let height = bmi_height.value;
-		// check the value
-		if (isNaN(weight) || weight == "" || isNaN(height) || height == "") {
-      // create warning alert
-			alert = create_alert("please, enter valid height and weight.", "warning");
+	if (bmi_calc_btn != null) {
+		bmi_calc_btn.addEventListener("click", (evt) => {
+			evt.preventDefault();
+			is_valid_inputs = true;
+			// get weight value
+			let weight = bmi_weight.value;
+			// get height value
+			let height = bmi_height.value;
+			// check the value
+			if (isNaN(weight) || weight == "" || isNaN(height) || height == "") {
+				// create warning alert
+				alert = create_alert(
+					"please, enter valid height and weight.",
+					"warning"
+				);
 
-      // remove alert after 10 sec
-			setTimeout(() => {
-				alert.remove();
-			}, 10000);
-		} else {
-			// calculate bmi
-			bmi_result = calc_bmi(weight, height);
-			// bmi clasification
-			bmi_class = bmi_classification(bmi_result);
+				// remove alert after 10 sec
+				setTimeout(() => {
+					alert.remove();
+				}, 10000);
+			} else {
+				// calculate bmi
+				bmi_result = calc_bmi(weight, height);
+				// bmi clasification
+				bmi_class = bmi_classification(bmi_result);
 
-			alert = create_alert(
-				`your bmi is ${bmi_result} and you are ${bmi_class}`,
-				"success"
-			);
+				alert = create_alert(
+					`your bmi is ${bmi_result} and you are ${bmi_class}`,
+					"success"
+				);
 
-      // remove alert after 15 sec
-			setTimeout(() => {
-				alert.remove();
-			}, 15000);
-		}
+				// remove alert after 15 sec
+				setTimeout(() => {
+					alert.remove();
+				}, 15000);
+			}
 
-    // check if alert was exist before
-		if (bmi_clac_container.children[1] != undefined) {
-      bmi_clac_container.children[1].remove();
-		}
-    
-    // append alert
-    bmi_clac_container.appendChild(alert);
-	});
+			// check if alert was exist before
+			if (bmi_clac_container.children[1] != undefined) {
+				bmi_clac_container.children[1].remove();
+			}
+
+			// append alert
+			bmi_clac_container.appendChild(alert);
+		});
+	}
 })();
 
 function calc_bmi(weight, height) {
